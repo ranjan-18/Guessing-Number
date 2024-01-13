@@ -1,0 +1,13 @@
+import random
+jackpot=random.randint(1,100)
+guess=int(input("Enter you number "))
+counter=1
+while jackpot!=guess:
+    if guess>jackpot:
+        print("guess lower number than your input ")
+    else:
+          print("guess higher number than your input ")
+    guess=int(input("Enter you number "))
+    counter+=1
+print("congrats you guess correctly!!")
+print("you took",counter,"attempts for correct guessing")
